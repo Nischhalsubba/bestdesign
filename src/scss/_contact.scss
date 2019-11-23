@@ -1,0 +1,54 @@
+.contact-hero {
+    height: 400px;
+
+    .image {
+        //background: url('../images/pawel-czerwinski-784154-unsplash\(1\).jpg') no-repeat fixed;
+        background-position: bottom center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(7, 7, 7, 0.6);
+        }
+
+        h1 {
+            color: white;
+            top: 50%;
+        }
+    }
+}
+
+.form {
+    .form-group {
+        form {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+            grid-gap: 3rem;
+        }
+
+    }
+}
+
+.display {
+    display: grid;
+    align-items: center;
+
+    .grid {
+        grid-template-rows: 1fr;
+        justify-items: center;
+    }
+
+    a{
+        color: white;
+    }
+}

@@ -1,0 +1,104 @@
+.about-hero {
+    height: 400px;
+
+    .image {
+        background: url('../images/Image 9.png') no-repeat fixed;
+        background-position: center center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(7, 7, 7, 0.6);
+        }
+
+        h1 {
+            color: white;
+            top: 50%;
+        }
+    }
+
+}
+
+.about-cta {
+    background: url('../images/alexandra-gorn-485551-unsplash.jpg');
+    background-size: cover;
+    background-position: bottom;
+    height: 350px;
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(7, 7, 7, 0.6);
+    }
+
+    h1,
+    h2 {
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+
+        &::before {
+            background: white none repeat;
+            bottom: -.5rem;
+            content: '';
+            height: 0px !important;
+            position: absolute;
+            width: 0px !important;
+
+            //Disabling underline
+        }
+    }
+
+    h2 {
+
+        margin-bottom: 2rem;
+        color: white;
+    }
+
+    a {
+        position: relative;
+    }
+}
+
+.about-service {
+    height: auto !important;
+    background-color: white;
+
+    .about-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .item {
+            width: 26%; //26% to maintain 3x3 layout
+            height: auto;
+            justify-items: center;
+            text-align: center;
+            padding-bottom: 3rem;
+
+            p {
+                font-size: 1rem;
+                line-height: 2rem;
+            }
+        }
+    }
+}

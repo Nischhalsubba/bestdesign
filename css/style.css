@@ -725,6 +725,11 @@ form a {
   width: 100%;
 }
 
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
 body .banner {
   width: 100%;
   margin: 0;
@@ -1615,7 +1620,6 @@ blockquote {
 }
 
 .contact-hero .image {
-  background: url("../images/pawel-czerwinski-784154-unsplash(1).jpg") no-repeat fixed;
   background-position: bottom center;
   background-size: cover;
   height: 100%;

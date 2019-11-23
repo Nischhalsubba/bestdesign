@@ -1,0 +1,252 @@
+/* Extra small devices (phones, 834px  and down) */
+@media only screen and (max-width: 834px) {
+
+    /* Reseting for mobile view */
+    .pl-3 {
+        padding-left: 0;
+    }
+
+    .pr-3 {
+        padding-right: 0;
+    }
+
+
+    /* ------------------- */
+
+    nav {
+        .grid-4-6 {
+            display: block;
+
+            .brand {
+                img {
+                    margin: 5px 0;
+                }
+            }
+
+            #menu {
+                display: block;
+                width: 35px;
+                height: 30px;
+                cursor: pointer;
+                float: right;
+                margin: 2rem 0 0 0;
+
+                .bar {
+                    height: 5px;
+                    width: 100%;
+                    background-color: red;
+                    display: block;
+                    border-radius: 5px;
+                }
+
+                #bar1 {
+                    transform: translateY(-4px);
+                }
+
+                #bar3 {
+                    transform: translateY(4px);
+                }
+
+
+            }
+
+            .change {
+
+                .bar {
+                    background-color: white;
+                }
+
+                #bar1 {
+                    transform: translateY(4px) rotate(45deg) !important;
+                }
+
+                #bar3 {
+                    transform: translateY(-6px) rotate(-45deg) !important;
+                }
+
+                #bar2 {
+                    opacity: 0;
+                }
+            }
+
+
+            .menu {
+                text-align: center;
+                width: 100%;
+                display: none;
+                padding: 0;
+                transition: 0.3s ease;
+
+                a:hover:after {
+                    width: 0% !important;
+                    left: 0;
+                    top: 25px;
+
+                }
+
+                a:hover {
+                    font-weight: bold;
+                }
+            }
+
+            .menu li {
+                display: flex !important;
+                height: 50px;
+                width: 100% !important;
+                //border-bottom: 1px solid $lightgrey;
+                padding: 0 !important;
+
+
+                a {
+                    padding: 0 !important;
+                    width: 100% !important;
+                    display: block !important;
+                }
+            }
+
+            #checkbox1:checked+.menu {
+                display: block !important;
+            }
+        }
+    }
+
+    .carousel-home {
+        .owl-text {
+            grid-template-rows: none !important;
+            grid-gap: 10px !important;
+        }
+    }
+
+    .intro {
+        height: auto !important;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+
+        .grid,
+        .grid-cn {
+            display: block;
+        }
+
+        img {
+            display: none !important;
+        }
+    }
+
+    .service {
+        height: auto !important;
+        padding-bottom: 2rem;
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            .icon-set {
+                grid-gap: 3rem !important;
+
+                a {
+                    text-align: center !important;
+                }
+
+                span {
+                    margin-left: 0 !important;
+                }
+
+                .grid-icon {
+                    grid-template-columns: 1fr !important;
+                    justify-items: center;
+                    grid-gap: 1rem;
+                }
+            }
+        }
+
+        .content {
+            display: none;
+        }
+    }
+
+
+
+    .testimonial {
+        .carousel-testimonial {
+            blockquote {
+                font-size: 2rem !important;
+            }
+        }
+    }
+
+    .location {
+        .info {
+            grid-template-columns: 1fr !important;
+
+        }
+    }
+
+    //Carousel-work
+    .carousel-work {
+        .owl-item {
+            //right: .5rem !important;
+
+            .item{
+                .card{
+                    h3{
+                        right: 6rem !important;
+                    }
+                }
+            }
+        }
+    }
+
+    //About us
+    .about-service {
+        .about-flex {
+            * {
+                display: block !important;
+            }
+
+            .item {
+                width: 100% !important;
+            }
+        }
+    }
+
+    // Contact page
+    .form {
+        display: block;
+
+        .grid {
+            display: block !important;
+        }
+
+        .ml-3 {
+            margin-left: 0rem;
+            margin-top: 3rem;
+            overflow: hidden;
+        }
+    }
+
+    footer {
+        .container {
+            display: block !important;
+            position: relative;
+            grid-template-columns: 1fr !important;
+
+            .info-footer {
+                display: block !important;
+                text-align: center;
+
+                ul {
+                    li {
+                        margin-top: 1rem;
+                    }
+                }
+            }
+
+            img {
+                display: none;
+            }
+        }
+    }
+
+    // /footer
+}

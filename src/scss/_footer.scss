@@ -1,0 +1,84 @@
+footer {
+    position: relative;
+    background-image: url('../images/Mask\ Group\ 5.png');
+
+    &::after {
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(10, 10, 10, 0.5);
+    }
+
+    * {
+        z-index: 3;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        justify-items: start;
+        align-items: flex-start;
+        position: relative;
+
+
+
+        .info-footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 8rem;
+            //grid-template-columns: 30% 30% 30%;
+            align-items: baseline;
+
+            ul {
+                a {
+                    color: grey;
+                }
+
+                li {
+                    padding-top: .5rem;
+
+                    a {
+                        color: white;
+
+                        &:hover {
+                            color: $secondary;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        img {
+            width: 225px;
+            height: 150px;
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    hr {
+        color: white;
+        z-index: 3;
+    }
+
+
+
+    .copyright {
+
+
+        * {
+            z-index: 3;
+        }
+
+        h5 {
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
