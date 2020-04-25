@@ -1184,6 +1184,7 @@ p {
   line-height: 30px;
   padding: 0;
   transition-duration: 0.6s;
+  z-index: 999;
 }
 
 .shrink .brand {
@@ -1838,6 +1839,12 @@ footer .copyright h5 {
   padding-bottom: 4rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .service_container {
+    grid-template-columns: 1fr;
+  }
+}
+
 .service_container .owl-prev,
 .service_container .owl-next {
   position: absolute;
@@ -1937,12 +1944,16 @@ footer .copyright h5 {
 }
 
 .service_item .desc {
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 .service_item .desc h2 {
-  font-size: 1rem;
+  font-size: 1.25rem;
   margin-bottom: 1.2rem;
+}
+
+.service_item .desc p {
+  font-size: 1rem;
 }
 
 @media (max-width: 1024px) {

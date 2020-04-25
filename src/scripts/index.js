@@ -56,7 +56,7 @@ $(document).ready(function () {
         items: 1
       },
       600: {
-        items: 2
+        items: 1
       },
       1000: {
         items: 3
@@ -64,30 +64,6 @@ $(document).ready(function () {
       2500: {
         items: 5
       }
-    }
-  })
-
-  $('.carousel-service').owlCarousel({
-    loop:true,
-    nav: true,
-    // margin: 50,
-    dots: false,
-    responsiveClass:true,
-    navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:3,
-            nav:false
-        },
-        1000:{
-            items:4,
-            nav:true,
-            loop:false
-        }
     }
   })
 });

@@ -18,6 +18,10 @@
   grid-column-gap: 2rem;
   padding-bottom: 4rem;
 
+  @media only screen and (max-width: 600px) {
+  grid-template-columns: 1fr;
+  }
+
   .owl-prev,
   .owl-next {
     position: absolute;
@@ -112,11 +116,14 @@
   }
 
   .desc {
-    margin-top: 5rem;
+    margin-top: 4rem;
 
     h2 {
-      font-size: 1rem;
+      font-size: 1.25rem;
       margin-bottom: 1.2rem;
+    }
+    p{
+      font-size: 1rem;
     }
   }
 }
