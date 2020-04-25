@@ -361,6 +361,7 @@ body {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  max-width: 1140px;
 }
 
 .container-full {
@@ -390,6 +391,7 @@ button a {
   font-weight: 300;
   letter-spacing: 2px;
   font-size: 14px;
+  border-radius: 4px;
 }
 
 .btn-plain {
@@ -399,6 +401,19 @@ button a {
 
 .btn:hover {
   background-color: #E35760;
+}
+
+.btn-primary {
+  border: 3px solid #BD0D22;
+  background-color: #BD0D22;
+  transition: 0.2s all linear;
+  color: #FFFFFF !important;
+}
+
+.btn-primary:hover {
+  border: 3px solid #f89ea9;
+  background-color: #f89ea9;
+  color: #FFFFFF !important;
 }
 
 .outline {
@@ -480,6 +495,14 @@ button a {
 
 .float-rt {
   float: right;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
 }
 
 .mt-3 {
@@ -1289,18 +1312,24 @@ p {
   color: #FFFFFF;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 20%;
+  grid-template-rows: 1fr auto 20%;
   justify-items: center;
   text-align: center;
   z-index: 99;
 }
 
-.carousel-home .item .owl-text h1 {
+.carousel-home .item .owl-text .heading {
   margin: 0;
+  font-weight: bold;
 }
 
-.carousel-home .item .owl-text h2 {
+.carousel-home .item .owl-text .sub_heading {
   margin: 0;
+  font-weight: lighter;
+}
+
+.carousel-home .item .owl-text .btn {
+  font-size: 1rem;
   margin-top: 1rem;
 }
 
@@ -1350,10 +1379,6 @@ p {
   grid-template-columns: auto 1fr;
 }
 
-.intro img {
-  width: 350px;
-}
-
 .intro .con {
   margin-left: 1rem;
 }
@@ -1364,6 +1389,10 @@ p {
 
 .intro .con a {
   color: #000000;
+}
+
+.intro .con p {
+  line-height: 30px;
 }
 
 .work .int-work h3 {
@@ -1905,8 +1934,29 @@ footer .copyright h5 {
   padding: 1.5rem 1rem;
   text-align: center;
   position: relative;
-  border-bottom: 2px solid #2B3162;
+  border-bottom: 2px solid transparent;
   z-index: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.service_item:hover {
+  box-shadow: 0 0 56px -8px rgba(0, 0, 0, 0.1);
+}
+
+.service_item::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border-bottom: 2px solid transparent;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0px;
+}
+
+.service_item:hover::after {
+  border-bottom: 2px solid #2B3162;
+  width: 100%;
 }
 
 .service_item .icon {

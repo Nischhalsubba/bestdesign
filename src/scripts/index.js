@@ -46,7 +46,7 @@ $(document).ready(function () {
 
   $('.carousel-work').owlCarousel({
     loop: true,
-    margin: 10,
+    margin: 25,
     nav: true,
     dots: false,
     // navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
