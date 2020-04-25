@@ -1,0 +1,137 @@
+//Intro
+.service {
+  background-color: $lightgrey1;
+  height: auto;
+  position: relative;
+  width: 100%;
+
+  .int {
+    span {
+      top: 35%;
+    }
+  }
+}
+
+.service_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+  padding-bottom: 4rem;
+
+  .owl-prev,
+  .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white !important;
+    border: 1px solid #E2E2E2 !important;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      font-size: 38px;
+      font-weight: lighter;
+      line-height: 32px;
+    }
+
+    &:hover i {
+      color: $secondary;
+    }
+  }
+
+  .owl-prev {
+    left: -3rem;
+  }
+
+  .owl-next {
+    right: -3rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .owl-prev {
+      left: -1rem;
+    }
+
+    .owl-next {
+      right: -1rem;
+    }
+
+  }
+}
+
+.service_item {
+  box-shadow: 0 0 56px -8px rgba(0, 0, 0, 0.07);
+  width: 15rem;
+  // margin: 0 auto;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  position: relative;
+  border-bottom: 2px solid $accent;
+  z-index: 0;
+
+  .icon {
+    background: $accent;
+    width: 6rem;
+    height: 3rem;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    i {
+      font-size: 30px;
+      color: #fff;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      border-left: 3rem solid transparent;
+      border-right: 3rem solid transparent;
+    }
+
+    &::before {
+      bottom: 100%;
+      border-bottom: 2rem solid $accent;
+    }
+
+    &::after {
+      top: 100%;
+      border-top: 2rem solid $accent;
+    }
+  }
+
+  .desc {
+    margin-top: 5rem;
+
+    h2 {
+      font-size: 1rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  #services {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

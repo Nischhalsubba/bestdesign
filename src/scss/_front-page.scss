@@ -182,6 +182,20 @@
         justify-items: center;
         position: relative;
 
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            opacity: 0.1;
+            background: #0052D4;
+            background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
+            background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
+        }
+
         img {
             position: absolute;
             width: 100%;
@@ -198,7 +212,7 @@
             grid-template-rows: 1fr 1fr 20%;
             justify-items: center;
             text-align: center;
-
+            z-index: 99;
 
 
             h1 {
@@ -251,14 +265,13 @@
 }
 
 //owl-carousel
-
 .intro {
-    background-color: $lightgrey;
-    background: url('../images/Group\ 88.svg') no-repeat;
+    background-color: #fff;
+    // background: url('../images/Group\ 88.svg') no-repeat;
     background-position: bottom;
     background-position-x: right;
 
-    .grid-cn{
+    .grid-cn {
         grid-template-columns: auto 1fr;
     }
 
@@ -269,6 +282,7 @@
 
     .con {
         margin-left: 1rem;
+
         h2 {
             margin-top: 0;
         }
@@ -279,59 +293,10 @@
     }
 }
 
-//Intro
-.service {
-    background-color: $lightred;
-    height: auto;
-    position: relative;
-    width: 100%;
-
-    &::before {
-        content: '';
-        display: block;
-        top: -1rem;
-        left: 50%;
-        right: 0;
-        -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-        position: absolute;
-        width: 120px;
-        height: 60px;
-        background-color: #E35760;
-        z-index: -1;
-        transform: translate(-50%, -40%);
-    }
-
-    .icon-set {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        //grid-template-rows: 1fr 1fr 1fr;
-        grid-template-rows: 150px 150px 150px !important;
-        //grid-template-rows: auto;
-        align-items: baseline;
-        justify-items: legacy;
-        grid-gap: 0rem;
-
-        a {
-            color: $black;
-        }
-
-        span {
-            margin-left: -40px;
-        }
-    }
-
-    .content {
-        p {
-            margin-top: 0;
-            color: white;
-        }
-    }
-}
-
 
 //Our work
 .work {
+
     .int-work {
         h3 {
             color: $black;
@@ -359,8 +324,6 @@
                         transform: rotate(0) scale(1);
                     }
                 }
-
-
 
                 img {
                     width: 100%;
@@ -415,7 +378,12 @@
             transform: translateY(-50%);
             background-color: white !important;
             border: 1px solid #E2E2E2 !important;
-            padding: 10px 25px !important;
+            width: 50px;
+            height: 50px;
+
+            &:hover i {
+                color: $secondary;
+            }
 
             span {
                 font-size: 2rem;
@@ -437,8 +405,9 @@
 
 //CTA
 .cta {
-    height: 300px;
+    height: auto;
     overflow: hidden;
+    padding: 3rem 0rem;
     background-image: url('../images/wooden_bg.jpg');
     background-size: cover;
     display: grid;
@@ -446,8 +415,9 @@
 
 
     .container {
-        h1 {
+        .title {
             position: relative;
+            color: #fff;
 
             &::before {
                 background: white none repeat;
@@ -462,79 +432,6 @@
 
         a {
             color: white;
-        }
-
-    }
-}
-
-.testimonial {
-    .int {
-        h3 {
-            color: black;
-        }
-    }
-
-    .carousel-testimonial {
-        .item {
-            display: grid;
-            grid-template-columns: 1fr;
-            //grid-template-rows: 1fr 10% 5% 5%;
-            grid-template-columns: 1fr 25% 30% -1%;
-            justify-items: center;
-            align-items: center;
-
-            img,
-            h3,
-            h4 {
-                padding: 0;
-                margin: .5rem;
-            }
-
-            //Custom typography
-            h4 {
-                font-weight: 400;
-            }
-
-            blockquote {
-
-                &::before {
-                    font-family: "Font Awesome 5 Free";
-                    font-weight: 900;
-                    content: '\f10d';
-                    top: 0rem;
-                    left: 0rem;
-                    position: absolute;
-                    font-size: 3rem;
-                    color: $lightred;
-                    opacity: .2;
-                }
-            }
-
-
-            .ui-face {
-                width: 200px;
-                height: 200px;
-                overflow: hidden;
-                border-radius: 50%;
-                display: grid;
-                justify-items: center;
-                align-items: center;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
-
-            }
-        }
-
-        .owl-dots .owl-dot span {
-            width: 15px;
-            height: 15px;
-        }
-
-        .owl-dots .owl-dot.active span {
-            background-color: $secondary;
         }
 
     }

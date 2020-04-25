@@ -15,7 +15,7 @@
 
     nav {
         .grid-4-6 {
-            display: block;
+            display: flow-root;
 
             .brand {
                 img {
@@ -29,7 +29,7 @@
                 height: 30px;
                 cursor: pointer;
                 float: right;
-                margin: 2rem 0 0 0;
+                margin: 1rem 0 0 0;
 
                 .bar {
                     height: 5px;
