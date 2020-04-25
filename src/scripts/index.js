@@ -1,6 +1,6 @@
 $(document).ready(function () {
+  $(".owl-carousel").owlCarousel();
 
-  
   //header nav shrink
   $(document).on("scroll", function () {
     var scrollTop = $(this).scrollTop();
@@ -15,23 +15,22 @@ $(document).ready(function () {
 
 
   //changing class of nav
-  function width(){
-    if ($(window).width() < 834){
+  function width() {
+    if ($(window).width() < 834) {
       $('nav').addClass('bg-opac');
-    } else{
+    } else {
       $('nav').removeClass('bg-opac');
     }
   }
 
   $(window).resize(width);
-  
-
 
   $('.carousel-home').owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
     dots: false,
+    responsiveClass:true,
     navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
     responsive: {
       0: {
@@ -62,7 +61,7 @@ $(document).ready(function () {
       1000: {
         items: 3
       },
-      2500:{
+      2500: {
         items: 5
       }
     }
@@ -89,6 +88,4 @@ $(document).ready(function () {
       }
     }
   })
-
-
 });
