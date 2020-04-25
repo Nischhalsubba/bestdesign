@@ -1536,7 +1536,6 @@ p {
   background: url("../images/alexandra-gorn-485551-unsplash.jpg");
   background-size: cover;
   background-position: bottom;
-  height: 350px;
   position: relative;
 }
 
@@ -1551,18 +1550,19 @@ p {
   background-color: rgba(7, 7, 7, 0.6);
 }
 
-.about-cta h1,
-.about-cta h2 {
+.about-cta .about-cta-title,
+.about-cta .about-cta-content {
   position: relative;
   margin: 0;
   padding: 0;
 }
 
-.about-cta h1 {
+.about-cta .about-cta-title {
   margin-bottom: 1rem;
+  color: #FFFFFF;
 }
 
-.about-cta h1::before {
+.about-cta .about-cta-title::before {
   background: white none repeat;
   bottom: -.5rem;
   content: '';
@@ -1571,7 +1571,7 @@ p {
   width: 0px !important;
 }
 
-.about-cta h2 {
+.about-cta .about-cta-content {
   margin-bottom: 2rem;
   color: white;
 }
@@ -1615,6 +1615,7 @@ p {
 }
 
 .contact-hero .image {
+  background: url("../images/pawel-czerwinski-784154-unsplash(1).jpg") no-repeat fixed;
   background-position: bottom center;
   background-size: cover;
   height: 100%;

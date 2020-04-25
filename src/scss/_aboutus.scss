@@ -32,7 +32,7 @@
     background: url('../images/alexandra-gorn-485551-unsplash.jpg');
     background-size: cover;
     background-position: bottom;
-    height: 350px;
+    // height: 350px;
     position: relative;
 
     &::before {
@@ -46,15 +46,16 @@
         background-color: rgba(7, 7, 7, 0.6);
     }
 
-    h1,
-    h2 {
+    .about-cta-title,
+    .about-cta-content {
         position: relative;
         margin: 0;
         padding: 0;
     }
 
-    h1 {
+    .about-cta-title {
         margin-bottom: 1rem;
+        color: $primary;
 
         &::before {
             background: white none repeat;
@@ -68,7 +69,7 @@
         }
     }
 
-    h2 {
+    .about-cta-content {
 
         margin-bottom: 2rem;
         color: white;
