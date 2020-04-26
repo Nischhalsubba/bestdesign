@@ -52,6 +52,7 @@ button a {
   letter-spacing: 1px;
   font-size: 14px;
   border-radius: 4px;
+  height: 20px;
 }
 
 .btn-plain {
@@ -1797,5 +1798,34 @@ footer .copyright_made .fa {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+}
+
+.gallery-hero {
+  height: 400px;
+}
+
+.gallery-hero .image {
+  background: url("../images/gallery.jpg") no-repeat fixed;
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.gallery-hero .image::before {
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(7, 7, 7, 0.6);
+}
+
+.gallery-hero .image h1 {
+  color: white;
+  top: 50%;
 }
 /*# sourceMappingURL=style.css.map */

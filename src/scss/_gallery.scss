@@ -1,0 +1,28 @@
+.gallery-hero {
+  height: 400px;
+
+  .image {
+      background: url('../images/gallery.jpg') no-repeat fixed;
+      background-position: center center;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      position: relative;
+
+      &::before {
+          content: "";
+          display: block;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background-color: rgba(7, 7, 7, 0.6);
+      }
+
+      h1 {
+          color: white;
+          top: 50%;
+      }
+  }
+}
