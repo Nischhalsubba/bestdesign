@@ -480,6 +480,14 @@ form {
   display: flex;
   flex-direction: column;
 
+  @media (max-width: 570px) {
+    height: 250px;
+
+    .hero_title {
+      margin-top: -100px;
+    }
+  }
+
   .image {
     height: 100%;
     position: relative;

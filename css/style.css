@@ -822,6 +822,15 @@ form a {
           flex-direction: column;
 }
 
+@media (max-width: 570px) {
+  .hero {
+    height: 250px;
+  }
+  .hero .hero_title {
+    margin-top: -100px;
+  }
+}
+
 .hero .image {
   height: 100%;
   position: relative;
