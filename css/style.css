@@ -701,12 +701,12 @@ a {
   width: 30%;
 }
 
-input[type='text'],
-[type='email'],
-[type='number'] {
+input[type="text"],
+[type="email"],
+[type="number"] {
   border: none;
   border-bottom: 2px solid #2B3162;
-  padding-left: .3rem;
+  padding-left: 0.3rem;
   color: #2B3162;
   /* 
     -webkit-box-shadow: 2px 2px 1px -1px rgba(0, 0, 0, 0.75);
@@ -715,35 +715,35 @@ input[type='text'],
   */
 }
 
-input[type='text']:focus,
-[type='email']:focus,
-[type='number']:focus {
-  background-color: #F9F9F9;
+input[type="text"]:focus,
+[type="email"]:focus,
+[type="number"]:focus {
+  background-color: #f9f9f9;
 }
 
 ::-webkit-input-placeholder {
   font-weight: 300;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 ::-moz-placeholder {
   font-weight: 300;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 :-ms-input-placeholder {
   font-weight: 300;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 ::-ms-input-placeholder {
   font-weight: 300;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 ::placeholder {
   font-weight: 300;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 .display {
@@ -806,6 +806,33 @@ form a {
 
 .texture > div {
   z-index: 222;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.hero {
+  height: 400px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero .image {
+  height: 100%;
+  position: relative;
+}
+
+.hero_background {
+  width: 100%;
+}
+
+.hero_title {
+  margin-top: -200px;
 }
 
 .grid-3 {
@@ -1140,7 +1167,7 @@ p {
 }
 
 .nav .brand img {
-  height: 45px;
+  height: 65px;
 }
 
 .nav #menu {
@@ -1216,7 +1243,7 @@ p {
 }
 
 .shrink .brand img {
-  height: 45px;
+  height: 55px;
 }
 
 .shrink ul li a {

@@ -24,8 +24,6 @@ body {
   margin-right: auto;
 }
 
-
-
 button {
   background-color: $secondary;
   padding: 10px;
@@ -34,8 +32,6 @@ button {
   font-weight: 300;
   letter-spacing: 2px;
   //font-size: 2rem;
-
-
 
   a {
     color: white;
@@ -99,7 +95,6 @@ button {
   justify-items: center;
   align-items: initial;
   justify-items: baseline;
-
 }
 
 .grid-icon {
@@ -145,18 +140,17 @@ button {
   display: flex;
 }
 
-
 //float
 .float-rt {
   float: right;
 }
 
 //Margin
-.mb-2{
+.mb-2 {
   margin-bottom: 2rem;
 }
 
-.mt-2{
+.mt-2 {
   margin-top: 2rem;
 }
 
@@ -276,7 +270,6 @@ button {
     transform: translate(-50%, -40%);
     color: black;
     z-index: 2;
-
   }
 }
 
@@ -286,13 +279,11 @@ button {
   padding-right: 2.5rem;
 }
 
-
 //centering
 .m-auto {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 //size
 .sm-icon {
@@ -307,11 +298,10 @@ button {
   height: 65px;
   border-radius: 50%;
   background-color: $black;
-
-
 }
 
-.icon-holder:hover {}
+.icon-holder:hover {
+}
 
 .icon:hover .icon-holder {
   border-radius: 50%;
@@ -374,12 +364,12 @@ a {
 }
 
 //Styling form
-input[type='text'],
-[type='email'],
-[type='number'] {
+input[type="text"],
+[type="email"],
+[type="number"] {
   border: none;
   border-bottom: 2px solid $accent;
-  padding-left: .3rem;
+  padding-left: 0.3rem;
   color: $accent;
   /* 
     -webkit-box-shadow: 2px 2px 1px -1px rgba(0, 0, 0, 0.75);
@@ -388,14 +378,13 @@ input[type='text'],
   */
 
   &:focus {
-    background-color: #F9F9F9;
+    background-color: #f9f9f9;
   }
 }
 
-
 ::placeholder {
   font-weight: 300;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 .display {
@@ -409,15 +398,12 @@ input[type='text'],
   font-weight: 300;
 }
 
-
 //contact button
 form {
-
   a {
     font-size: 1rem;
   }
 }
-
 
 //Hero Height
 .our-work-hero {
@@ -462,7 +448,16 @@ form {
     height: 100%;
     background: #ffffff;
     background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 20%, #000000 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffffff), color-stop(20%, #ffffff), color-stop(50%, #000000));
+    background: -webkit-gradient(
+      radial,
+      center center,
+      0px,
+      center center,
+      100%,
+      color-stop(0%, #ffffff),
+      color-stop(20%, #ffffff),
+      color-stop(50%, #000000)
+    );
     background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 88%, #000000 100%);
     background: -o-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 88%, #000000 100%);
     background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 88%, #000000 100%);
@@ -471,7 +466,30 @@ form {
     opacity: 0.3;
   }
 
-  >div {
+  > div {
     z-index: 222;
+  }
+}
+
+.text-white {
+  color: $primary;
+}
+
+.hero {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+
+  .image {
+    height: 100%;
+    position: relative;
+  }
+
+  &_background {
+    width: 100%;
+  }
+
+  &_title {
+    margin-top: -200px;
   }
 }
