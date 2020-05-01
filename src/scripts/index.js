@@ -5,10 +5,10 @@ $(document).ready(function () {
     var scrollTop = $(this).scrollTop();
     if (scrollTop > 0) {
       $("nav").addClass("shrink");
-      $("nav .brand img").attr("src", "./images/Bestdesign-ori-color.png");
+      $("nav .brand img").attr("src", "/assets/images/Bestdesign-ori-color.png");
     } else {
       $("nav").removeClass("shrink");
-      $("nav .brand img").attr("src", "./images/Bestdesign-ori-B&W.png");
+      $("nav .brand img").attr("src", "/assets/images/Bestdesign-ori-B&W.png");
     }
   });
 
@@ -30,6 +30,7 @@ $(document).ready(function () {
     nav: true,
     dots: false,
     responsiveClass:true,
+    animateOut: 'fadeOut',
     navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
     responsive: {
       0: {
