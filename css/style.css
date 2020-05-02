@@ -876,6 +876,16 @@ form a {
   border-radius: 0%;
 }
 
+.link_accent {
+  color: #2B3162;
+  text-decoration: underline;
+}
+
+.link_accent:hover {
+  color: #0c0e1b;
+  text-decoration: none;
+}
+
 .grid-3 {
   grid-template-columns: 1fr 1fr 1fr;
 }

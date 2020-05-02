@@ -531,3 +531,13 @@ form {
 .border-radius-0 {
   border-radius: 0%;
 }
+
+.link_accent {
+  color: $accent;
+  text-decoration: underline;
+
+  &:hover {
+    color: darken($accent, 20%);
+    text-decoration: none;
+  }
+}
