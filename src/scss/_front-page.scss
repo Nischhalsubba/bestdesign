@@ -317,6 +317,42 @@
                     left: 5%;
                     bottom: 10%;
                     z-index: 2;
+
+                    h3 {
+                        color: white;
+                        bottom: 9rem;
+                        left: 1rem;
+                        z-index: 1;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    p {
+                        color: white;
+                        bottom: 5rem;
+                        left: 1rem;
+                        line-height: 1.25rem;
+                        margin-top: 8px;
+                        margin-bottom: 2rem;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .btn {
+                        background-color: $lightred;
+
+                        a {
+                            color: white;
+                        }
+
+                        &:hover {
+                            background-color: $secondary;
+                        }
+                    }
                 }
 
                 &:hover {
@@ -336,39 +372,6 @@
                     transition: 0.3s ease-in-out;
                 }
 
-                h3 {
-                    color: white;
-                    bottom: 9rem;
-                    left: 1rem;
-                    z-index: 1;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-
-                p {
-                    color: white;
-                    bottom: 5rem;
-                    left: 1rem;
-                    line-height: 1.25rem;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-
-                .btn {
-                    background-color: $lightred;
-
-                    a {
-                        color: white;
-                    }
-
-                    &:hover {
-                        background-color: $secondary;
-                    }
-                }
                 .badge {
                     position: absolute;
                     margin-left: 1rem;

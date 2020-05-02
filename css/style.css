@@ -1525,6 +1525,42 @@ p {
   z-index: 2;
 }
 
+.work .carousel-work .item .card-detail h3 {
+  color: white;
+  bottom: 9rem;
+  left: 1rem;
+  z-index: 1;
+}
+
+.work .carousel-work .item .card-detail h3:hover {
+  text-decoration: underline;
+}
+
+.work .carousel-work .item .card-detail p {
+  color: white;
+  bottom: 5rem;
+  left: 1rem;
+  line-height: 1.25rem;
+  margin-top: 8px;
+  margin-bottom: 2rem;
+}
+
+.work .carousel-work .item .card-detail p:hover {
+  text-decoration: underline;
+}
+
+.work .carousel-work .item .card-detail .btn {
+  background-color: #E35760;
+}
+
+.work .carousel-work .item .card-detail .btn a {
+  color: white;
+}
+
+.work .carousel-work .item .card-detail .btn:hover {
+  background-color: #BD0D22;
+}
+
 .work .carousel-work .item .card:hover img {
   -webkit-transform: rotate(0) scale(1);
   transform: rotate(0) scale(1);
@@ -1537,40 +1573,6 @@ p {
   -webkit-transform: rotate(15deg) scale(1.4);
   transform: rotate(15deg) scale(1.4);
   transition: 0.3s ease-in-out;
-}
-
-.work .carousel-work .item .card h3 {
-  color: white;
-  bottom: 9rem;
-  left: 1rem;
-  z-index: 1;
-}
-
-.work .carousel-work .item .card h3:hover {
-  text-decoration: underline;
-}
-
-.work .carousel-work .item .card p {
-  color: white;
-  bottom: 5rem;
-  left: 1rem;
-  line-height: 1.25rem;
-}
-
-.work .carousel-work .item .card p:hover {
-  text-decoration: underline;
-}
-
-.work .carousel-work .item .card .btn {
-  background-color: #E35760;
-}
-
-.work .carousel-work .item .card .btn a {
-  color: white;
-}
-
-.work .carousel-work .item .card .btn:hover {
-  background-color: #BD0D22;
 }
 
 .work .carousel-work .item .card .badge {
