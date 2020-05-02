@@ -1445,11 +1445,11 @@ p {
 }
 
 .carousel-home .owl-prev {
-  left: 20px;
+  left: 5px;
 }
 
 .carousel-home .owl-next {
-  right: 20px;
+  right: 5px;
 }
 
 .intro {
