@@ -875,6 +875,32 @@ body li {
   list-style-type: none;
 }
 
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 0.25rem;
+}
+
+.badge-pill {
+  padding-right: 0.6em;
+  padding-left: 0.6em;
+  border-radius: 10rem;
+}
+
+.badge-primary {
+  color: #FFFFFF;
+  background-color: #2B3162;
+}
+
+.badge-secondary {
+  color: #FFFFFF;
+  background-color: #BD0D22;
+}
+
 body {
   font-family: 'Oswald', sans-serif;
 }
