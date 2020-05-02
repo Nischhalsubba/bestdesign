@@ -852,6 +852,10 @@ form a {
   background-color: transparent !important;
 }
 
+.height-auto {
+  height: auto !important;
+}
+
 .grid-3 {
   grid-template-columns: 1fr 1fr 1fr;
 }
