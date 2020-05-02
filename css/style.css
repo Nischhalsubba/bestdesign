@@ -421,6 +421,7 @@ button a {
   border: 3px solid #BD0D22;
   background-color: transparent;
   transition: 0.2s all linear;
+  color: #BD0D22;
 }
 
 .outline:hover {

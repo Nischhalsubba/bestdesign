@@ -76,6 +76,7 @@ button {
   border: 3px solid $secondary;
   background-color: transparent;
   transition: 0.2s all linear;
+  color: $secondary;
 
   &:hover {
     background-color: $secondary;
