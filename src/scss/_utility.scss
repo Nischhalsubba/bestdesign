@@ -34,8 +34,8 @@ body {
 }
 
 .badge-primary {
-    color: $primary;
-    background-color: lighten($accent, 40%);
+    color: $accent;
+    background-color: lighten($accent, 60%);
 }
 
 .badge-secondary {
