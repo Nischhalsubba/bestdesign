@@ -831,6 +831,7 @@ form a {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  overflow: hidden;
 }
 
 .hero::before {
