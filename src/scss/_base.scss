@@ -84,13 +84,13 @@ button {
   }
 }
 
-.btn-lightwhite{
-background-color: $lightwhite;
-color: $black;
+.btn-lightwhite {
+  background-color: $lightwhite;
+  color: $black;
 
-&:hover{
-background-color: darken($lightwhite, 20%);
-}
+  &:hover {
+    background-color: darken($lightwhite, 20%);
+  }
 }
 
 //Grid

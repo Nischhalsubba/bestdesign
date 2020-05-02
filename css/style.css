@@ -2210,7 +2210,7 @@ footer .copyright_made .fa {
 }
 
 .service_container_inner {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 @media (max-width: 784px) {
