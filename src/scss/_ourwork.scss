@@ -28,8 +28,6 @@ $colorText: #404646;
         flex-flow: column nowrap;
         justify-content: flex-start;
         padding: $boxSpacing;
-
-
     }
 
     .card-text {
@@ -40,9 +38,8 @@ $colorText: #404646;
         margin: 0 0 0.8em 0;
         padding: 0;
 
-
         h3 {
-            margin-bottom: .5rem;
+            margin-bottom: 0.5rem;
             margin-top: 0;
         }
     }
@@ -59,7 +56,6 @@ $colorText: #404646;
     }
 
     @media (max-width: 570px) {
-
         .container {
             grid-template: auto / 1fr;
             padding: $boxSpacing/1.5;
@@ -75,6 +71,5 @@ $colorText: #404646;
                 max-width: 45%;
             }
         }
-
     }
 }

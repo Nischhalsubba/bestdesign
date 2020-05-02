@@ -1517,6 +1517,14 @@ p {
   background: black;
 }
 
+.work .carousel-work .item .card-detail {
+  position: absolute;
+  bottom: 0%;
+  left: 5%;
+  bottom: 10%;
+  z-index: 2;
+}
+
 .work .carousel-work .item .card:hover img {
   -webkit-transform: rotate(0) scale(1);
   transform: rotate(0) scale(1);
@@ -1535,7 +1543,6 @@ p {
   color: white;
   bottom: 9rem;
   left: 1rem;
-  position: absolute;
   z-index: 1;
 }
 
@@ -1547,8 +1554,6 @@ p {
   color: white;
   bottom: 5rem;
   left: 1rem;
-  position: absolute;
-  z-index: 1;
   line-height: 1.25rem;
 }
 
@@ -1557,9 +1562,6 @@ p {
 }
 
 .work .carousel-work .item .card .btn {
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
   background-color: #E35760;
 }
 
@@ -1865,7 +1867,7 @@ p {
 }
 
 .ourwork .card-text h3 {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   margin-top: 0;
 }
 
