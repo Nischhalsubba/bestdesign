@@ -83,6 +83,19 @@
   cursor: pointer;
   position: relative;
 
+  &_bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    display: flex;
+
+    &_link {
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+
   &:hover {
     box-shadow: 0 0 56px -8px rgba(0, 0, 0, 0.1);
   }
@@ -167,6 +180,7 @@
 
   .desc {
     margin-top: 4rem;
+    margin-bottom: 2rem;
 
     h2 {
       font-size: 1.25rem;
@@ -196,4 +210,8 @@
 
 .service_container_inner {
   grid-template-columns: 1fr 1fr;
+
+  @media (max-width: 784px) {
+    grid-template-columns: 1fr;
+  }
 }

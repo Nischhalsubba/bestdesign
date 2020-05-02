@@ -84,6 +84,15 @@ button {
   }
 }
 
+.btn-lightwhite{
+background-color: $lightwhite;
+color: $black;
+
+&:hover{
+background-color: darken($lightwhite, 20%);
+}
+}
+
 //Grid
 .grid {
   display: grid;
@@ -517,4 +526,8 @@ form {
 
 .justify-content-center {
   justify-content: center;
+}
+
+.border-radius-0 {
+  border-radius: 0%;
 }
