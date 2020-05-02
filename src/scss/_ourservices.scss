@@ -32,7 +32,7 @@
     top: 50%;
     transform: translateY(-50%);
     background-color: white !important;
-    border: 1px solid #E2E2E2 !important;
+    border: 1px solid #e2e2e2 !important;
     width: 50px;
     height: 50px;
     display: flex;
@@ -66,7 +66,6 @@
     .owl-next {
       right: -1rem;
     }
-
   }
 }
 
@@ -134,9 +133,9 @@
         top: 0;
         bottom: 0;
         opacity: 0.1;
-        background: #0052D4;
-        background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
-        background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
+        background: #0052d4;
+        background: -webkit-linear-gradient(to right, #6fb1fc, #4364f7, #0052d4);
+        background: linear-gradient(to right, #6fb1fc, #4364f7, #0052d4);
         z-index: 999;
       }
     }
@@ -193,4 +192,8 @@
     display: grid;
     grid-template-columns: 1fr;
   }
+}
+
+.service_container_inner {
+  grid-template-columns: 1fr 1fr;
 }
