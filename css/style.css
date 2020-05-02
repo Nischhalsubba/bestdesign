@@ -844,6 +844,10 @@ form a {
   margin-top: -200px;
 }
 
+.width-auto {
+  width: auto !important;
+}
+
 .grid-3 {
   grid-template-columns: 1fr 1fr 1fr;
 }
