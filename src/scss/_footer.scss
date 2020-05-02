@@ -20,7 +20,7 @@ footer {
 
     .container {
         display: grid;
-        grid-template-columns: 80% 20%;
+        grid-template-columns: 82% 20%;
         justify-items: start;
         align-items: center;
         position: relative;
@@ -38,24 +38,42 @@ footer {
                 }
 
                 li {
-                    padding-top: .5rem;
+                    padding-top: 0.5rem;
 
                     a {
                         color: white;
 
                         &:hover {
                             color: $secondary;
-
                         }
                     }
                 }
             }
         }
 
+        .logo-footer {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr;
+
+            &-slogan {
+                // position: absolute;
+                // bottom: 0%;
+                font-size: 14px;
+                color: $primary;
+                margin-top: .5rem;
+                text-align: right;
+
+                @media (max-width: 768px) {
+                    text-align: center;
+                }
+            }
+        }
+
         img {
             width: 150px;
-            position: absolute;
-            right: 0;
+            // position: absolute;
+            // right: 0;
         }
     }
 
@@ -63,8 +81,6 @@ footer {
         color: darken($accent, 15%);
         z-index: 3;
     }
-
-
 
     .copyright {
         display: flex;
@@ -94,8 +110,8 @@ footer {
                 color: $secondary;
                 margin: 0 3px;
                 font-size: 10px;
-                animation: pound .35s infinite alternate;
-                -webkit-animation: pound .35s infinite alternate;
+                animation: pound 0.35s infinite alternate;
+                -webkit-animation: pound 0.35s infinite alternate;
             }
         }
 
