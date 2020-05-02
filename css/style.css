@@ -848,6 +848,10 @@ form a {
   width: auto !important;
 }
 
+.background-transparent {
+  background-color: transparent !important;
+}
+
 .grid-3 {
   grid-template-columns: 1fr 1fr 1fr;
 }
