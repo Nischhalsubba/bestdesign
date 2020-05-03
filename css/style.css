@@ -1011,7 +1011,7 @@ h3 {
   color: #2B3162;
   font-size: 1.5rem;
   font-weight: 500;
-  line-height: 1rem;
+  line-height: 1.65rem;
 }
 
 h5 {
@@ -1022,7 +1022,7 @@ h5 {
 p {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  line-height: 1rem;
+  line-height: 1.65rem;
   font-size: 1.5rem;
   line-height: 2.5rem;
 }
@@ -1065,13 +1065,13 @@ blockquote {
 .info {
   color: #000000;
   opacity: 0.5;
-  line-height: 1rem;
+  line-height: 1.65rem;
   font-size: 1rem;
 }
 
 p {
   font-size: 1rem;
-  line-height: 1rem;
+  line-height: 1.65rem;
 }
 
 @media only screen and (max-width: 834px) {
@@ -1944,7 +1944,7 @@ p {
 
 .about-service .about-flex .item p {
   font-size: 1rem;
-  line-height: 1rem;
+  line-height: 1.65rem;
 }
 
 .contact-hero {
