@@ -624,12 +624,12 @@ button a {
   color: black;
 }
 
-.int bold {
+.int_background {
   opacity: 0.09;
   font-size: 3rem;
 }
 
-.int span {
+.int_main {
   text-transform: uppercase;
   position: absolute;
   left: 50%;

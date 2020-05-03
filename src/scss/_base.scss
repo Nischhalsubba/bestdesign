@@ -274,12 +274,12 @@ button {
   font-size: 3rem;
   color: black;
 
-  bold {
+  &_background {
     opacity: 0.09;
     font-size: 3rem;
   }
 
-  span {
+  &_main {
     text-transform: uppercase;
     position: absolute;
     left: 50%;
