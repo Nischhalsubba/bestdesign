@@ -1393,7 +1393,15 @@ p {
 .list.two-columns {
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: 1.65rem;
+  -webkit-column-gap: 4rem;
+     -moz-column-gap: 4rem;
+          column-gap: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .list.two-columns {
+    grid-template-columns: auto;
+  }
 }
 
 .nav {
