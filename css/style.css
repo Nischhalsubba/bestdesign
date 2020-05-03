@@ -853,6 +853,13 @@ form a {
   }
   .hero .hero_title {
     margin-top: -100px;
+    font-size: 32px;
+  }
+  .hero .hero_subtitle {
+    font-size: 14px;
+  }
+  .hero .hero_btn {
+    font-size: 12px;
   }
 }
 
