@@ -208,11 +208,15 @@
             .heading {
                 margin: 0;
                 font-weight: bold;
+                font-size: 64px;
             }
 
             .sub_heading {
                 margin: 0;
                 font-weight: lighter;
+                font-size: 32px;
+                color: $primary;
+                margin: .5rem 0rem;
             }
 
             .btn {

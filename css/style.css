@@ -1805,11 +1805,15 @@ p {
 .carousel-home .item .owl-text .heading {
   margin: 0;
   font-weight: bold;
+  font-size: 64px;
 }
 
 .carousel-home .item .owl-text .sub_heading {
   margin: 0;
   font-weight: lighter;
+  font-size: 32px;
+  color: #FFFFFF;
+  margin: .5rem 0rem;
 }
 
 .carousel-home .item .owl-text .btn {
