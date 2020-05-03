@@ -986,7 +986,7 @@ body li {
 }
 
 body {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 header {
@@ -1020,7 +1020,7 @@ h5 {
 }
 
 p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   line-height: 2rem;
   font-size: 1.5rem;
@@ -1064,7 +1064,7 @@ blockquote {
 
 .info {
   color: #000000;
-  opacity: .5;
+  opacity: 0.5;
   line-height: 2rem;
   font-size: 1rem;
 }
@@ -1087,6 +1087,15 @@ p {
   .fnt-2 {
     font-size: 2rem;
   }
+}
+
+.list {
+  font-family: "Poppins", sans-serif;
+}
+
+.list li {
+  list-style-type: disc;
+  line-height: 30px;
 }
 
 /* Extra small devices (phones, 834px  and down) */

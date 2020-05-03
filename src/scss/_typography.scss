@@ -1,5 +1,5 @@
 body {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
 }
 
 header {
@@ -33,7 +33,7 @@ h5 {
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
     //text-align: justify;
     line-height: 2rem;
@@ -45,7 +45,6 @@ span {
     font-weight: 400;
     font-size: 1.3rem;
     color: $black;
-
 }
 
 a {
@@ -75,13 +74,13 @@ blockquote {
     color: $secondary;
 }
 
-.txt-primary{
+.txt-primary {
     color: $accent;
 }
 
 .info {
     color: $black;
-    opacity: .5;
+    opacity: 0.5;
     line-height: 2rem;
     font-size: 1rem;
 }
@@ -90,7 +89,6 @@ p {
     font-size: 1rem;
     line-height: 2rem;
 }
-
 
 @media only screen and (max-width: 834px) {
     h1 {
@@ -108,5 +106,12 @@ p {
     .fnt-2 {
         font-size: 2rem;
     }
+}
 
+.list {
+    font-family: "Poppins", sans-serif;
+    li {
+        list-style-type: disc;
+        line-height: 30px;
+    }
 }
