@@ -1,0 +1,13 @@
+.list-card {
+  background-color: lighten($accent, 70%);
+  padding: 1rem;
+  border-top: 3px solid $accent;
+  // border: 1px dashed lighten($accent, 45%);
+  // box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+.list.two-columns {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1.65rem;
+}

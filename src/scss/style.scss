@@ -11,6 +11,10 @@
 // Responsive
 @import 'media-queries';
 
+// components
+@import './popup';
+@import './card';
+
 // pages
 @import'front-page';
 @import 'aboutus';

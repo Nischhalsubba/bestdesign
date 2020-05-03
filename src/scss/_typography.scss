@@ -24,7 +24,7 @@ h3 {
     color: $accent;
     font-size: 1.5rem;
     font-weight: 500;
-    line-height: 2rem;
+    line-height: 1rem;
 }
 
 h5 {
@@ -36,7 +36,7 @@ p {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     //text-align: justify;
-    line-height: 2rem;
+    line-height: 1rem;
     font-size: 1.5rem;
     line-height: 2.5rem;
 }
@@ -81,13 +81,13 @@ blockquote {
 .info {
     color: $black;
     opacity: 0.5;
-    line-height: 2rem;
+    line-height: 1rem;
     font-size: 1rem;
 }
 
 p {
     font-size: 1rem;
-    line-height: 2rem;
+    line-height: 1rem;
 }
 
 @media only screen and (max-width: 834px) {
