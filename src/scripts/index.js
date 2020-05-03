@@ -32,8 +32,8 @@ $(document).ready(function () {
     responsiveClass:true,
     animateOut: 'fadeOut',
     autoplay:true,
-    autoplayTimeout:5000,
-    autoplayHoverPause:true,
+    autoplayTimeout:7000,
+    autoplayHoverPause:false,
     navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
     responsive: {
       0: {
