@@ -928,6 +928,16 @@ form a {
   text-decoration: none;
 }
 
+.image-fluid {
+  width: auto;
+}
+
+@media (max-width: 570px) {
+  .image-fluid {
+    width: 100%;
+  }
+}
+
 .grid-3 {
   grid-template-columns: 1fr 1fr 1fr;
 }
