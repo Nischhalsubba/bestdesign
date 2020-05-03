@@ -2434,7 +2434,7 @@ footer .copyright_made .fa {
   width: 100%;
 }
 
-.service .int span {
+.service .int .int_main {
   top: 35%;
 }
 
