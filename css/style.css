@@ -880,6 +880,12 @@ form a {
           align-items: center;
 }
 
+@media (max-width: 572px) {
+  .hero_content {
+    margin-top: -200px;
+  }
+}
+
 .hero_title {
   margin-bottom: 1rem;
 }
@@ -1928,10 +1934,21 @@ p {
   transition: 0.3s ease-in-out;
 }
 
-.work .carousel-work .item .card .badge {
+.work .carousel-work .item .card .badge-container {
   position: absolute;
   margin-left: 1rem;
   z-index: 1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.work .carousel-work .item .card .badge-container .badge {
+  margin-left: 8px;
+}
+
+.work .carousel-work .item .card .badge-container .badge:first-child {
+  margin-left: 0px;
 }
 
 .work .carousel-work .owl-item {

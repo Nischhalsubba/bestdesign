@@ -372,10 +372,19 @@
                     transition: 0.3s ease-in-out;
                 }
 
-                .badge {
+                .badge-container {
                     position: absolute;
                     margin-left: 1rem;
                     z-index: 1;
+                    display: flex;
+
+                    .badge {
+                        margin-left: 8px;
+
+                        &:first-child {
+                            margin-left: 0px;
+                        }
+                    }
                 }
             }
         }
