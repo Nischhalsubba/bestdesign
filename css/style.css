@@ -640,6 +640,7 @@ button a {
   color: black;
   z-index: 2;
   font-size: 20px;
+  margin: 0px;
 }
 
 .p-3 {
