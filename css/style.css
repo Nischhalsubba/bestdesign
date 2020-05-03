@@ -1871,8 +1871,9 @@ p {
   margin-left: 1rem;
 }
 
-.intro .con h2 {
+.intro .con .txt-secondary {
   margin-top: 0;
+  font-size: 32px;
 }
 
 .intro .con a {
