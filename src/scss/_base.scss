@@ -384,7 +384,8 @@ a {
 //Styling form
 input[type="text"],
 [type="email"],
-[type="number"] {
+[type="number"],
+textarea {
   border: none;
   border-bottom: 2px solid $accent;
   padding-left: 0.3rem;

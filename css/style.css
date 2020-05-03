@@ -721,7 +721,8 @@ a {
 
 input[type="text"],
 [type="email"],
-[type="number"] {
+[type="number"],
+textarea {
   border: none;
   border-bottom: 2px solid #2B3162;
   padding-left: 0.3rem;
@@ -735,7 +736,8 @@ input[type="text"],
 
 input[type="text"]:focus,
 [type="email"]:focus,
-[type="number"]:focus {
+[type="number"]:focus,
+textarea:focus {
   background-color: #f9f9f9;
 }
 
