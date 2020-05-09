@@ -2046,8 +2046,8 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
-  .cta p {
-    font-size: 12px;
+  .cta .cta_para {
+    font-size: 12px !important;
   }
 }
 
