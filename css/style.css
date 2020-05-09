@@ -2337,6 +2337,14 @@ p {
   }
 }
 
+.filter a {
+  margin-left: 1rem;
+}
+
+.filter a:first-child {
+  margin-left: 0rem;
+}
+
 footer {
   position: relative;
   background-color: #2B3162;
