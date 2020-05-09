@@ -443,6 +443,12 @@
     display: grid;
     align-items: center;
 
+    p {
+        @media only screen and (max-width: 768px) {
+            font-size: 12px;
+        }
+    }
+
     .container {
         .title {
             position: relative;
@@ -455,11 +461,6 @@
                 height: 4px;
                 position: absolute;
                 width: 50px;
-            }
-        }
-        p {
-            @media only screen and (max-width: 768px) {
-                font-size: 12px;
             }
         }
 
