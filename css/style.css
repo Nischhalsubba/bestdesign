@@ -1693,6 +1693,12 @@ p {
   top: 25px;
 }
 
+.nav ul li a.active::after {
+  width: 100%;
+  left: 0;
+  top: 25px;
+}
+
 .nav ul li a:hover:after {
   width: 100%;
   left: 0;
@@ -1829,7 +1835,7 @@ p {
   font-weight: lighter;
   font-size: 32px;
   color: #FFFFFF;
-  margin: .5rem 0rem;
+  margin: 0.5rem 0rem;
 }
 
 .carousel-home .item .owl-text .btn {
