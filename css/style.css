@@ -2059,6 +2059,12 @@ p {
   width: 50px;
 }
 
+@media only screen and (max-width: 768px) {
+  .cta .container p {
+    font-size: 12px;
+  }
+}
+
 .cta .container a {
   color: white;
 }
