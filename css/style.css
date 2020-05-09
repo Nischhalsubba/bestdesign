@@ -2353,6 +2353,12 @@ p {
   grid-gap: 1rem;
 }
 
+@media (max-width: 830px) {
+  .filter {
+    grid-template-rows: auto auto;
+  }
+}
+
 .filter a {
   margin-left: 1rem;
   text-align: center;
