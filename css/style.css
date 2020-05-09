@@ -2359,13 +2359,15 @@ p {
   }
 }
 
+@media (max-width: 430px) {
+  .filter {
+    grid-template-rows: auto auto auto;
+  }
+}
+
 .filter a {
   margin-left: 1rem;
   text-align: center;
-}
-
-.filter a:first-child {
-  margin-left: 0rem;
 }
 
 footer {
