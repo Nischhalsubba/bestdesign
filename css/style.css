@@ -976,6 +976,10 @@ form a {
           align-items: center;
 }
 
+.margin-right-1 {
+  margin-right: 5px;
+}
+
 .grid-3 {
   grid-template-columns: 1fr 1fr 1fr;
 }
