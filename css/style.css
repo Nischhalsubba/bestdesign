@@ -2337,8 +2337,25 @@ p {
   }
 }
 
+.filter {
+  display: grid;
+  grid-template-columns: -webkit-fit-content;
+  grid-template-columns: fit-content;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, 125px);
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: legacy;
+  grid-gap: 1rem;
+}
+
 .filter a {
   margin-left: 1rem;
+  text-align: center;
 }
 
 .filter a:first-child {
