@@ -1,77 +1,164 @@
 <div align="center">
-<img width="100%" height = "" src="https://i.imgur.com/Qmncfmh.jpg" alt="cover" />
+
+<img width="100%" src="https://i.imgur.com/Qmncfmh.jpg" alt="Best Design Furniture project cover" />
+
+# 🪑 Best Design Furniture
+
+### Furniture Business Website / Design Asset Repository
+
+**A furniture-brand website and visual-design reference project for Best Design Furniture, designed and coded by Nischhal Raj Subba. The repository contains static frontend work, design assets, layout references, and brand-oriented website materials.**
+
+![HTML](https://img.shields.io/badge/HTML-Static%20Frontend-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS%20%2F%20SCSS-Visual%20Styling-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-Interactions-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111)
+![Furniture](https://img.shields.io/badge/Industry-Furniture%20%2F%20Interior-7C3AED?style=for-the-badge)
+![MIT](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+
 </div>
 
-<h1> Best Design ! <img src = "https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width = 50px> </h1>
+---
 
-A project for Best Design Furniture (Designed,coded and converted by Nischhal)
+## ✨ Overview
 
-[Facebook Link] (https://www.facebook.com/Best-design-pvt-ltd-2316077058415919)
+**Bestdesign** is a furniture-focused website/design repository created for **Best Design Furniture**. It includes frontend materials and visual assets that can be used as a reference for furniture, interior, showroom, or product-catalog style websites.
 
+The repository represents a design-and-code project by **Nischhal Raj Subba**, with an emphasis on layout, visual presentation, and brand-facing static frontend work.
 
-# Bestdesign
+---
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+## 🧭 Table of Contents
 
-> *A large collection of design assets, templates and sample projects used as a reference for layout and visual design best practices*
+- [Project Purpose](#-project-purpose)
+- [Designer’s Perspective](#-designers-perspective)
+- [Possible Use Cases](#-possible-use-cases)
+- [Tech Stack](#-tech-stack)
+- [Recommended Structure](#-recommended-structure)
+- [Run Locally](#-run-locally)
+- [Quality Checklist](#-quality-checklist)
+- [Roadmap](#-roadmap)
+- [License](#-license)
 
-## Table of Contents
+---
 
-- [Overview](#overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contributing](#contributing)
-- [Suggestions for Improvement](#suggestions-for-improvement)
+## 🎯 Project Purpose
 
-## Overview
+This repo is intended to support a furniture business website or design reference system.
 
-A large collection of design assets, templates and sample projects used as a reference for layout and visual design best practices.
+It can be used for:
 
-## Features
+- furniture showroom website
+- interior product catalogue
+- landing page design reference
+- static frontend practice
+- image-heavy product presentation
+- brand and layout exploration
 
-| ✔️ | Feature |
+---
+
+## 🎨 Designer’s Perspective
+
+A furniture website should feel visual, warm, and trustworthy. The design needs to make products feel desirable while keeping navigation and product discovery simple.
+
+Strong design priorities include:
+
+- large product imagery
+- clear product/category sections
+- showroom/contact visibility
+- consistent spacing
+- clean typography
+- mobile-friendly product browsing
+- visual trust signals
+
+---
+
+## 🧩 Possible Use Cases
+
+| Use Case | Description |
 |---|---|
-| ✅ | Assorted design templates (websites, landing pages, UI components) |
-| ✅ | Graphic assets such as icons and images |
-| ✅ | Sample HTML/CSS files demonstrating design patterns |
+| Furniture homepage | Brand introduction and product highlights |
+| Product catalogue | Display furniture categories and collections |
+| Showroom landing page | Drive visits, calls, and inquiries |
+| Design reference archive | Store layout ideas and UI assets |
+| Portfolio project | Demonstrate design-to-code ability |
 
+---
 
-## Tech Stack
+## 🛠 Tech Stack
 
-- 🛠️ HTML
-- 🛠️ CSS
-- 🛠️ SCSS
-- 🛠️ JavaScript
-- 🛠️ Adobe assets
+| Layer | Technology |
+|---|---|
+| Markup | HTML |
+| Styling | CSS / SCSS |
+| Interaction | JavaScript |
+| Assets | Images, icons, design resources |
 
-## Installation
+---
 
-Follow these steps to get a local copy of the project up and running:
+## 📁 Recommended Structure
 
-1. Clone the repository and explore the folders.
+```text
+.
+├── index.html
+├── assets/
+│   ├── images/
+│   ├── icons/
+│   ├── css/
+│   └── js/
+├── scss/
+└── README.md
+```
 
-## Usage
+---
 
-Use the templates and assets as a starting point for your own design projects.
+## 🚀 Run Locally
 
-## License
+If the project includes static HTML files, open the main HTML file directly or run:
 
-This project is licensed under the **MIT License**. See the `LICENSE` file for more information.
+```bash
+python -m http.server 8000
+```
 
-## Contributing
+Then open:
 
-Contributions are welcome! Please open an issue or submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
+```text
+http://127.0.0.1:8000/
+```
 
-## Suggestions for Improvement
+---
 
-<details>
-<summary>Click to expand</summary>
+## ✅ Quality Checklist
 
-- Organize assets into clearly labelled folders (e.g. templates, images, icons)
-- Document how to use each template
-- Add a preview gallery to showcase each template visually
+- [ ] Product images are optimized.
+- [ ] Furniture categories are clear.
+- [ ] Contact details are visible.
+- [ ] Mobile layout is usable.
+- [ ] Placeholder content is removed.
+- [ ] Alt text is added for product images.
+- [ ] Social links are updated.
+- [ ] Page has useful SEO metadata.
 
-</details>
+---
+
+## 🗺 Roadmap
+
+- Add screenshot previews.
+- Organize assets into clearer folders.
+- Add product/category documentation.
+- Add deployment instructions.
+- Add SEO metadata and Open Graph tags.
+- Add a product catalogue page.
+- Add contact/inquiry form.
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+<div align="center">
+
+Designed and coded by **Nischhal Raj Subba** for furniture and interior-focused web presentation.
+
+</div>
