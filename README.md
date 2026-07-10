@@ -1,164 +1,55 @@
-<div align="center">
+# Best Design Furniture WordPress Theme
 
-<img width="100%" src="https://i.imgur.com/Qmncfmh.jpg" alt="Best Design Furniture project cover" />
+A custom WordPress theme created for Best Design Furniture and developed by Nischhal Raj Subba.
 
-# 🪑 Best Design Furniture
+## What this repository contains
 
-### Furniture Business Website / Design Asset Repository
+- WordPress theme templates written in PHP
+- Custom furniture-brand layout and styling
+- Theme images and branding assets
+- WordPress navigation integration
+- Responsive frontend behavior
 
-**A furniture-brand website and visual-design reference project for Best Design Furniture, designed and coded by Nischhal Raj Subba. The repository contains static frontend work, design assets, layout references, and brand-oriented website materials.**
+This is not a standalone static HTML website. It must be installed inside a WordPress site's `wp-content/themes/` directory and activated from the WordPress admin area.
 
-![HTML](https://img.shields.io/badge/HTML-Static%20Frontend-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS%20%2F%20SCSS-Visual%20Styling-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-Interactions-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111)
-![Furniture](https://img.shields.io/badge/Industry-Furniture%20%2F%20Interior-7C3AED?style=for-the-badge)
-![MIT](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+## Local setup
 
-</div>
-
----
-
-## ✨ Overview
-
-**Bestdesign** is a furniture-focused website/design repository created for **Best Design Furniture**. It includes frontend materials and visual assets that can be used as a reference for furniture, interior, showroom, or product-catalog style websites.
-
-The repository represents a design-and-code project by **Nischhal Raj Subba**, with an emphasis on layout, visual presentation, and brand-facing static frontend work.
-
----
-
-## 🧭 Table of Contents
-
-- [Project Purpose](#-project-purpose)
-- [Designer’s Perspective](#-designers-perspective)
-- [Possible Use Cases](#-possible-use-cases)
-- [Tech Stack](#-tech-stack)
-- [Recommended Structure](#-recommended-structure)
-- [Run Locally](#-run-locally)
-- [Quality Checklist](#-quality-checklist)
-- [Roadmap](#-roadmap)
-- [License](#-license)
-
----
-
-## 🎯 Project Purpose
-
-This repo is intended to support a furniture business website or design reference system.
-
-It can be used for:
-
-- furniture showroom website
-- interior product catalogue
-- landing page design reference
-- static frontend practice
-- image-heavy product presentation
-- brand and layout exploration
-
----
-
-## 🎨 Designer’s Perspective
-
-A furniture website should feel visual, warm, and trustworthy. The design needs to make products feel desirable while keeping navigation and product discovery simple.
-
-Strong design priorities include:
-
-- large product imagery
-- clear product/category sections
-- showroom/contact visibility
-- consistent spacing
-- clean typography
-- mobile-friendly product browsing
-- visual trust signals
-
----
-
-## 🧩 Possible Use Cases
-
-| Use Case | Description |
-|---|---|
-| Furniture homepage | Brand introduction and product highlights |
-| Product catalogue | Display furniture categories and collections |
-| Showroom landing page | Drive visits, calls, and inquiries |
-| Design reference archive | Store layout ideas and UI assets |
-| Portfolio project | Demonstrate design-to-code ability |
-
----
-
-## 🛠 Tech Stack
-
-| Layer | Technology |
-|---|---|
-| Markup | HTML |
-| Styling | CSS / SCSS |
-| Interaction | JavaScript |
-| Assets | Images, icons, design resources |
-
----
-
-## 📁 Recommended Structure
+1. Install a local WordPress environment.
+2. Copy this repository into:
 
 ```text
-.
-├── index.html
-├── assets/
-│   ├── images/
-│   ├── icons/
-│   ├── css/
-│   └── js/
-├── scss/
-└── README.md
+wp-content/themes/bestdesign
 ```
 
----
+3. Activate the theme from **Appearance → Themes**.
+4. Create or assign the navigation menu expected by the theme.
+5. Configure pages, media, and content from WordPress.
 
-## 🚀 Run Locally
+## Main files
 
-If the project includes static HTML files, open the main HTML file directly or run:
+| File | Purpose |
+|---|---|
+| `style.css` | Theme metadata and main styles |
+| `functions.php` | Theme setup and WordPress integrations |
+| `header.php` | Document head, site branding, and navigation |
+| `footer.php` | Footer markup and WordPress footer hook |
+| `index.php` | Main fallback template |
+| `front-page.php` | Homepage template when configured |
 
-```bash
-python -m http.server 8000
-```
+## Maintenance notes
 
-Then open:
+- Use WordPress URL helpers rather than hard-coded `.html` links.
+- Escape URLs and dynamic output with WordPress escaping functions.
+- Preserve `wp_head()`, `wp_body_open()`, and `wp_footer()` hooks.
+- Test menus, widgets, images, and templates against a supported WordPress version.
+- Optimize large furniture images before production use.
 
-```text
-http://127.0.0.1:8000/
-```
+## Status
 
----
+This is an older custom-theme project retained as part of Nischhal's frontend and WordPress development history. It may require modernization before use on a current production website.
 
-## ✅ Quality Checklist
+## Author
 
-- [ ] Product images are optimized.
-- [ ] Furniture categories are clear.
-- [ ] Contact details are visible.
-- [ ] Mobile layout is usable.
-- [ ] Placeholder content is removed.
-- [ ] Alt text is added for product images.
-- [ ] Social links are updated.
-- [ ] Page has useful SEO metadata.
+**Nischhal Raj Subba**
 
----
-
-## 🗺 Roadmap
-
-- Add screenshot previews.
-- Organize assets into clearer folders.
-- Add product/category documentation.
-- Add deployment instructions.
-- Add SEO metadata and Open Graph tags.
-- Add a product catalogue page.
-- Add contact/inquiry form.
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**.
-
----
-
-<div align="center">
-
-Designed and coded by **Nischhal Raj Subba** for furniture and interior-focused web presentation.
-
-</div>
+Current portfolio: https://nischhalsubba.com.np/
