@@ -13,7 +13,8 @@ Legacy WordPress theme for the Best Design agency site. The theme contains custo
 - `page.php` / `single.php` / `index.php` — functional WordPress fallbacks for pages, single posts, and archives.
 - `category-work.php` — archive presentation for the legacy Work post category.
 - `style.css` — required WordPress theme metadata and stylesheet entry point.
-- `css/theme.css` — maintained legacy theme CSS imported by `style.css`.
+- `css/legacy-theme.css` — preserved compiled CSS from the original theme; its source Sass/build pipeline is not present in this repository.
+- `css/README.md` — ownership note for the preserved compiled stylesheet.
 - `js/index.js` — menu, navigation/logo state, carousels, and service preview behavior.
 - `owl carousel/` — bundled third-party Owl Carousel distribution; treat it as vendor code.
 - `images/` and `icons/` — theme artwork and media assets.
@@ -40,7 +41,7 @@ The theme uses WordPress's bundled jQuery, the bundled Owl Carousel files, Googl
 
 Keep WordPress queries scoped with `WP_Query` instead of replacing the global query with `query_posts()`. Use `get_template_directory_uri()` or WordPress URL helpers for theme assets rather than hard-coded localhost paths.
 
-The root `style.css` is intentionally small because WordPress requires its theme metadata there; the existing compiled theme rules live in `css/theme.css`. The Owl Carousel directory is third-party vendor code and should not receive project-specific comments or manual edits.
+The root `style.css` is intentionally small because WordPress requires its theme metadata there; the historical compiled theme rules live in `css/legacy-theme.css`. That legacy stylesheet is treated as generated/compiled output because the original source pipeline is absent. The Owl Carousel directory is third-party vendor code and should not receive project-specific comments or manual edits.
 
 Repository README rewriting workflows, duplicate CSS backups/minified copies, dead template placeholders, and machine-generated repository reports are not part of the maintained theme.
 
