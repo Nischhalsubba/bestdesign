@@ -1,30 +1,58 @@
+<?php
+/**
+ * Shared footer for the Best Design WordPress theme.
+ * Renders location/contact shortcuts, recent featured services, the registered
+ * footer menu, recent work, theme branding, and the current copyright year.
+ */
+
+$footer_services = new WP_Query(
+    array(
+        'post_type'      => 'bestdesign_services',
+        'post_status'    => 'publish',
+        'posts_per_page' => 4,
+        'category_name'  => 'featured',
+        'order'          => 'DESC',
+        'orderby'        => 'date',
+    )
+);
+
+$footer_work = new WP_Query(
+    array(
+        'post_type'      => 'bestdesign_work',
+        'post_status'    => 'publish',
+        'posts_per_page' => 4,
+        'order'          => 'DESC',
+        'orderby'        => 'date',
+    )
+);
+?>
+
 <section class="container-full location pb-2">
     <div class="int pt-2 pb-2">
-        <bold>LOCATION </bold>
+        <strong>LOCATION</strong>
         <span>WE ARE LOCATED AT</span>
     </div>
 
     <div class="info">
         <div class="info1 grid-center">
-            <a href="#">
+            <a href="https://maps.google.com/?q=Baneshor+Kathmandu+Nepal">
                 <h2>Baneshor kathmandu Nepal</h2>
             </a>
-            <img src="<?php echo get_template_directory_uri(). './images/placeholder.png' ?> " alt="">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/images/placeholder.png' ); ?>" alt="">
         </div>
 
         <div class="info2 grid-center">
-            <a href="#">
+            <a href="tel:9844444555">
                 <h2>9844444555</h2>
             </a>
-            <img src="<?php echo get_template_directory_uri(). './images/telephone.png' ?>" alt="">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/images/telephone.png' ); ?>" alt="">
         </div>
 
         <div class="info3 grid-center">
-            <a href="#">
+            <a href="mailto:bestdesignktm@gmail.com">
                 <h2>bestdesignktm@gmail.com</h2>
             </a>
-
-            <img src="<?php echo get_template_directory_uri(). './images/arroba.png' ?>" alt="">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/images/arroba.png' ); ?>" alt="">
         </div>
     </div>
 </section>
@@ -33,83 +61,55 @@
     <div class="container">
         <div class="info-footer pt-2 pb-2">
             <div>
-
+                <h2 class="fnt-2">SERVICE</h2>
                 <ul class="pl-0">
-                    <a href="#" class="fnt-2"> SERVICE</a> <br>
-                    <?php
-                        $args = array(
-                        'post_type'=> 'bestdesign_services',
-                        'category_name'=>'featured', 
-                        'showposts' => '4',
-                        'order' => 'DESC',
-                        'orderby' => 'date'
-                        );
-                        query_posts( $args );
-                        while ( have_posts() ) : the_post();
-                    ?>
-                    <li><a href="#" class="thin"><?php the_title();?></a></li>
-                    <?php
-                        endwhile;
-                    
-                        // Reset Query
-                        wp_reset_query();
-                        ?>
-                </ul>
-
-            </div>
-
-            <div>
-                <ul class="pl-0">
-                    <a href="#" class="fnt-2">SOCIAL</a> <br>
-                    
-                    <li><a href="#" class="thin">
-                    <ul id=”your-custom-id” class="pl-0 ">
-                    <?php wp_nav_menu( array ( 'menu_id' => 'none','menu_class' => 'pl-0')); ?>
-                    </ul>
-
-                    </a></li>
-                    
+                    <?php while ( $footer_services->have_posts() ) : ?>
+                        <?php $footer_services->the_post(); ?>
+                        <li><a href="<?php the_permalink(); ?>" class="thin"><?php the_title(); ?></a></li>
+                    <?php endwhile; ?>
+                    <?php wp_reset_postdata(); ?>
                 </ul>
             </div>
 
             <div>
-                <ul class="pl-0">
-                    <a href="#" class="fnt-2">OUR WORK</a> <br>
-                    <?php
-                            $args = array(
-                            'post_type'=> 'bestdesign_work',
-                            'showposts' => '4',
-                            'order' => 'DESC',
-                            'orderby' => 'date'
-                            );
-                            query_posts( $args );
-                            while ( have_posts() ) : the_post();
-                            $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); 
-                    ?>
-                    <li><a href="#" class="thin"><?php the_title();?></a></li>
+                <h2 class="fnt-2">SOCIAL</h2>
+                <?php
+                wp_nav_menu(
+                    array(
+                        'theme_location' => 'footer-menu',
+                        'container'      => false,
+                        'menu_class'     => 'pl-0 footer-social-menu',
+                        'fallback_cb'    => false,
+                    )
+                );
+                ?>
+            </div>
 
-                    <?php
-                            endwhile;
-                        
-                            // Reset Query
-                            wp_reset_query();
-                    ?>
-                    
+            <div>
+                <h2 class="fnt-2">OUR WORK</h2>
+                <ul class="pl-0">
+                    <?php while ( $footer_work->have_posts() ) : ?>
+                        <?php $footer_work->the_post(); ?>
+                        <li><a href="<?php the_permalink(); ?>" class="thin"><?php the_title(); ?></a></li>
+                    <?php endwhile; ?>
+                    <?php wp_reset_postdata(); ?>
                 </ul>
             </div>
         </div>
 
-        <img src="<?php echo get_template_directory_uri(). '/images/Bestdesign-ori-B&W.png';?>" alt=""
-            class="pt-2 pb-2 ml-3">
-
+        <img
+            src="<?php echo esc_url( get_template_directory_uri() . '/images/Bestdesign-ori-B&W.png' ); ?>"
+            alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?> logo"
+            class="pt-2 pb-2 ml-3"
+        >
     </div>
 
     <hr class="container">
     <div class="copyright grid-center text-center pt-1 pb-1">
-        <h5>copyright 2019 All Right Reserved.</h5>
+        <h5>&copy; <?php echo esc_html( wp_date( 'Y' ) ); ?> All Rights Reserved.</h5>
     </div>
 </footer>
+
 <?php wp_footer(); ?>
 </body>
-
 </html>
