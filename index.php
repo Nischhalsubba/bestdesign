@@ -1,25 +1,34 @@
-<?php get_header();?>
+<?php
+/**
+ * Default WordPress archive/index template for the Best Design theme.
+ * Renders the active query with titles, excerpts, featured images, and standard
+ * pagination when no more specific template matches the request.
+ */
 
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+get_header();
+?>
 
-	<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-		<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-		<?php the_content(); ?>
-	</div>
+<main class="container pt-4 pb-4">
+    <?php if ( have_posts() ) : ?>
+        <?php while ( have_posts() ) : ?>
+            <?php the_post(); ?>
+            <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
-<?php endwhile; ?>
+                <?php if ( has_post_thumbnail() ) : ?>
+                    <a href="<?php the_permalink(); ?>" aria-label="<?php echo esc_attr( get_the_title() ); ?>">
+                        <?php the_post_thumbnail( 'large' ); ?>
+                    </a>
+                <?php endif; ?>
 
-	<div class="navigation">
-		<div class="next-posts"><?php next_posts_link(); ?></div>
-		<div class="prev-posts"><?php previous_posts_link(); ?></div>
-	</div>
+                <?php the_excerpt(); ?>
+            </article>
+        <?php endwhile; ?>
 
-<?php else : ?>
+        <?php the_posts_pagination(); ?>
+    <?php else : ?>
+        <p><?php esc_html_e( 'No content was found.', 'bestdesign' ); ?></p>
+    <?php endif; ?>
+</main>
 
-	<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-		<h1>Not Found</h1>
-	</div>
-
-<?php endif; ?>
-
-<?php get_footer();?>
+<?php get_footer(); ?>
