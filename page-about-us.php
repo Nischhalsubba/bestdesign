@@ -1,4 +1,25 @@
-<?php get_header(); ?>
+<?php
+/**
+ * About page template for the Best Design WordPress theme.
+ * Presents the configured introduction and a concise directory of published
+ * services using a scoped WordPress query.
+ */
+
+get_header();
+
+$services = new WP_Query(
+    array(
+        'post_type'      => 'bestdesign_services',
+        'post_status'    => 'publish',
+        'posts_per_page' => -1,
+    )
+);
+
+$intro_title   = function_exists( 'get_field' ) ? get_field( 'title' ) : '';
+$intro_content = function_exists( 'get_field' ) ? get_field( 'homepage_introduction' ) : '';
+$service_index = 0;
+?>
+
 <section class="about-hero">
     <div class="image">
         <h1 class="mt-auto mb-auto int container">ABOUT US</h1>
@@ -8,68 +29,56 @@
 <section class="intro pt-7 pb-7">
     <div class="container grid grid-cn">
         <div>
-            <img src=" <?php echo get_template_directory_uri() . './images/Mask Group 1.png'  ?> " alt="">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/images/Mask Group 1.png' ); ?>" alt="">
         </div>
 
         <div class="introduction">
-            <h2 class="txt-secondary"> <?php echo get_field("title"); ?> </h2>
-            <?php echo get_field("homepage_introduction"); ?>
-            <a href="#" class="btn outline float-rt p-3 dark-text">READ MORE </a>
+            <?php if ( $intro_title ) : ?>
+                <h2 class="txt-secondary"><?php echo esc_html( $intro_title ); ?></h2>
+            <?php endif; ?>
+            <?php if ( $intro_content ) : ?>
+                <?php echo wp_kses_post( $intro_content ); ?>
+            <?php endif; ?>
         </div>
-        <!--Introduction-->
     </div>
 </section>
 
 <section class="container-full cta about-cta">
-    <div class="container mt-auto mb-auto ">
-        <h1>
-            Make with love all what we do.
-        </h1>
+    <div class="container mt-auto mb-auto">
+        <h1>Make with love all what we do.</h1>
         <h2>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam, quis
         </h2>
-        <a href="#" class="btn">
-            SEE A PROJECT
-        </a>
+        <a href="<?php echo esc_url( home_url( '/our-work/' ) ); ?>" class="btn">SEE A PROJECT</a>
     </div>
 </section>
 
-
 <section class="service about-service pb-2">
     <div class="int pt-2 pb-2">
-        <bold>SERVICE </bold>
+        <strong>SERVICE</strong>
         <span>OUR SERVICE</span>
     </div>
 
     <div class="container d-flex about-flex">
-        <?php
-        $args = array(
-            'post_type' => 'bestdesign_services'
-        );
-        query_posts($args);
-        while (have_posts()) : the_post();
+        <?php while ( $services->have_posts() ) : ?>
+            <?php
+            $services->the_post();
+            $service_index++;
             ?>
-        <div class="item">
-            <div class="int">
-                <?php $i = 0;
-                $i++;  ?>
-                <bold><?php echo $i; ?></bold>
-                <span><?php the_title(); ?></span>
-            </div>
-            <p class="mb-3">
-                <?php echo wp_filter_nohtml_kses(word_count(get_the_excerpt(), '30')); ?>
-            </p>
-            <a href="#" class="btn outline dark-text  ">READ MORE</a>
-        </div>
-        <?php
-    endwhile;
-
-    // Reset Query
-    wp_reset_query();
-    ?>
+            <article class="item">
+                <div class="int">
+                    <strong><?php echo esc_html( str_pad( (string) $service_index, 2, '0', STR_PAD_LEFT ) ); ?></strong>
+                    <span><?php the_title(); ?></span>
+                </div>
+                <p class="mb-3">
+                    <?php echo esc_html( bestdesign_limit_words( wp_strip_all_tags( get_the_excerpt() ), 30 ) ); ?>
+                </p>
+                <a href="<?php the_permalink(); ?>" class="btn outline dark-text">READ MORE</a>
+            </article>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
     </div>
-
 </section>
 
-<?php get_footer(); ?> 
+<?php get_footer(); ?>
