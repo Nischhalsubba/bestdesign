@@ -1,0 +1,21 @@
+name: Validate WordPress theme
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  php-syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Validate PHP syntax
+        run: find theme -name '*.php' -print0 | xargs -0 -n1 php -l
+      - name: Verify WordPress theme stylesheet
+        run: test -f theme/style.css && grep -q 'Theme Name:' theme/style.css
