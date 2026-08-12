@@ -1,8 +1,8 @@
 /*
 Theme Name: Best Design
-Description: Legacy Best Design WordPress theme. This required WordPress stylesheet entry imports the maintained compiled theme CSS from css/theme.css.
+Description: Legacy Best Design WordPress theme. This required WordPress stylesheet entry imports the preserved compiled theme CSS from css/legacy-theme.css.
 Version: 1.0.0
 Text Domain: bestdesign
 */
 
-@import url("./css/theme.css");
+@import url("./css/legacy-theme.css");
